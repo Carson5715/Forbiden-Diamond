@@ -52,7 +52,8 @@ public class Menu_Controller : MonoBehaviour {
 		_audioSource.PlayOneShot(_audioClip);
 		PlayerPrefs.SetString("_LastScene", scene.name);
 		UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneToAboutOnPlay);
-		pauseMenu.GetComponent<PauseMenu>().Resume();
+		
+
 	}
 	public void Mute () {
 		_audioSource.PlayOneShot(_audioClip);
